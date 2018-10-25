@@ -1,0 +1,23 @@
+﻿<!doctype html>
+<html>
+	<head>
+		<title>Tehtävä 9</title>
+		<script>
+			'use strict';
+			function luoKoodi(pituus, min, max) {
+				var i;
+				var koodi = "";
+				for (i = 0; i<pituus; i++) {
+					koodi += Math.floor((Math.random()*(max-min+1))+min);
+				}
+				return koodi;
+			}
+			const luku1 = Math.floor(Math.random()*6)+1
+			const luku2 = Math.floor(Math.random()*6)+1
+			document.write("Koodi 1: "+luoKoodi(3, 0, 9)+"<br/>Koodi 2: "+luoKoodi(4, 1, 6));
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>
