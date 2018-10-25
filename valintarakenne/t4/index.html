@@ -1,0 +1,20 @@
+﻿<!doctype html>
+<html>
+	<head>
+		<title>Tehtävä 4</title>
+		<script>
+			'use strict';
+			let lompakko = +prompt("Montako euroa on lompakossasi?");
+			let lipunHinta = +prompt("Paljonko bussilippu maksaa?");
+			if (lompakko >= lipunHinta) {
+				lompakko -= lipunHinta;
+				alert("Hyvää matkaa! Sinulle jäi "+lompakko.toFixed(2)+" €.");
+			} else {
+				alert("Rahasi eivät riitä bussilippuun. Sinulle jäi "+lompakko.toFixed(2)+" €.");
+			}
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

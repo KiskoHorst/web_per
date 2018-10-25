@@ -1,0 +1,19 @@
+﻿<!doctype html>
+<html>
+	<head>
+		<title>Tehtävä 5</title>
+		<script>
+			'use strict';
+			if (window.confirm("Lasketaanko neliöjuuri?")) {
+				const luku = +prompt("Mistä luvusta?");
+				if (luku < 0) alert("Lukusi on negatiivinen, neliöjuurta ei ole määritelty.");
+				else alert("Vastaus on "+Math.sqrt(luku));
+			} else {
+				alert("Ei sitten");
+			}
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

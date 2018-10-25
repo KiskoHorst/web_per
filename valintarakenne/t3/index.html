@@ -1,0 +1,36 @@
+﻿<!doctype html>
+<html>
+	<head>
+		<title>Tehtävä 3</title>
+		<script>
+			'use strict';
+			const arvot_n = [117,175];
+			const arvot_m = [134,195];
+			let arvot;
+			let sukupuoli = "";
+			sukupuoli = prompt("Syötä sukupuolesi:").toLowerCase();
+			while (sukupuoli != "nainen" && sukupuoli != "mies") {
+				sukupuoli = prompt("Ei kelpaa, pitää pistää nainen tai mies").toLowerCase();
+			}
+			let hemoglobiini = +prompt("Syötä hemoglobiiniarvosi: ")
+			if (sukupuoli === "mies") {
+				arvot = arvot_m;
+			} else {
+				arvot = arvot_n;
+			}
+			if (hemoglobiini < arvot[0]) {
+				alert("Hemoglobiiniarvosi on alhainen.")
+			} else if (hemoglobiini > arvot[1]){
+				alert("Hemoglobiiniarvosi on korkea.");
+			} else if (hemoglobiini >= arvot[0] && hemoglobiini <= arvot[1]) {
+				alert("Hemoglobiiniarvosi on normaali.");
+			} else {
+				alert("Hemoglobiiniarvosi on jotenkin erikoinen, taisit pistää jotain hassua siihen äskeiseen kenttään.");
+			}
+			
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

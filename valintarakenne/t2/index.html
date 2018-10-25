@@ -1,0 +1,24 @@
+﻿<!doctype html>
+<html>
+	<head>
+		<title>Tehtävä 2</title>
+		<script>
+			'use strict';
+			const tuvat = ["Rohkelikko","Luihuinen","Puuskupuh","Korpinkynsi"];
+			function arvoTupa(nimi) {
+				switch (nimi.toLowerCase()) {
+					case "anna":
+						return tuvat[3];
+					//Tähän voi pistää lisää nimi-tupa pareja jos haluaa
+					default:
+						return tuvat[Math.floor(Math.random()*4)];
+				}
+			}
+			const nimi = prompt("Kirjoita nimesi");
+			alert(nimi+", olet "+arvoTupa(nimi));
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>
