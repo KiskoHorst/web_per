@@ -1,0 +1,19 @@
+﻿<!doctype html>
+<html>
+	<head>
+		<title>Tehtävä 3</title>
+		<script>
+			'use strict';
+			document.write("<ul>")
+			const aloitus = +prompt("Syötä aloitusvuosi");
+			const lopetus = +prompt("Syötä lopetusvuosi");
+			
+			for (let i=aloitus; i<=lopetus; i++) {
+				if (i%4 == 0 && i%100 != 0 || i%100 == 0 && i%400 == 0) document.write("<li>"+i+"</li>");
+			}
+			document.write("</ul>");
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

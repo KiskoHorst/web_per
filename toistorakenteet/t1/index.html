@@ -1,0 +1,18 @@
+﻿<!doctype html>
+<html>
+	<head>
+		<title>Tehtävä 1</title>
+		<script>
+			'use strict';
+			function kertoma(luku) {
+				if (luku === 1 || luku === 0) return 1;
+				return luku*kertoma(luku-1);
+			}
+			const luku1 = +prompt("Laita tähän joku kokonaisluku:");
+			alert("Syöttämäsi luvun kertoma on "+kertoma(luku1));
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

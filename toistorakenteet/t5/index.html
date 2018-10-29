@@ -1,0 +1,28 @@
+﻿<!doctype html>
+<html>
+	<head>
+		<title>Tehtävä 5</title>
+		<script>
+			'use strict';
+			function alkuluku(luku) {
+				let onko = true;
+				let i = luku-1;
+				while (onko && i > 1) {
+					onko = (luku%i !== 0);
+					i--;
+				}
+				return onko;
+			}
+			const luku = +prompt("Syötä luku");
+			
+			if (alkuluku(luku)) {
+				alert("Sehän on alkuluku!!!");
+			} else {
+				alert("Ei ole mikään alkuluku tämä.");
+			}
+			
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
