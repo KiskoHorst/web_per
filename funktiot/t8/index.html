@@ -1,0 +1,18 @@
+﻿<!doctype html>
+<html>
+	<head>
+		<title>Tehtävä 8+9</title>
+		<script>
+			'use strict';
+			const fibonacci = (monesko) => {
+				if (monesko == 1 || monesko == 2) return 1;
+				return fibonacci(monesko-1)+fibonacci(monesko-2);
+			}
+			const luku1 = +prompt('Monennenko luvun Fibonaccin lukujonosta haluat?');
+			alert('Vastaus: '+fibonacci(luku1));
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

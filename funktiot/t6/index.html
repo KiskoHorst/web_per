@@ -1,0 +1,23 @@
+﻿<!doctype html>
+<html>
+	<head>
+		<title>Tehtävä 2</title>
+		<script>
+			'use strict';
+			const vastaluvuiksi = (taulukko) => {
+				for (let i = 0; i < taulukko.length; i++) {
+					taulukko[i] = -taulukko[i];
+				}
+			}
+			const luku1 = +prompt('Luku 1?');
+			const luku2 = +prompt('Luku 2?');
+			const luku3 = +prompt('Luku 3?');
+			let taulukko = [luku1, luku2, luku3];
+			vastaluvuiksi(taulukko)
+			alert('Nyt ne on vastalukuja: '+taulukko);
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

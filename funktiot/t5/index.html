@@ -1,0 +1,23 @@
+﻿<!doctype html>
+<html>
+	<head>
+		<title>Tehtävä 5</title>
+		<script>
+			'use strict';
+			const liitä = (taulukko) => {
+				let teksti = '';
+				for (let i = 0; i < taulukko.length; i++) {
+					teksti += taulukko[i];
+				}			
+				return teksti;
+			}
+			const t1 = prompt('Teksti 1?');
+			const t2 = prompt('Teksti 2?');
+			const t3 = prompt('Teksti 3?');
+			alert('Lopputulos: '+liitä([t1, t2, t3]));
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>
